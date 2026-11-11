@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #e0e0e0;
+  --text-color: #111;
+  --border-color: #111;
+  --box-shadow-color: #111;
+  --accent-color: #ff3333;
+  --card-bg: #d4d4d4;
+}
+
+[data-theme='dark'] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --border-color: #e0e0e0;
+  --box-shadow-color: #e0e0e0;
+  --accent-color: #ff5555;
+  --card-bg: #2a2a2a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.2s, color 0.2s;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Брутальні базові класи */
+.brutal-box {
+  border: 3px solid var(--border-color);
+  box-shadow: 8px 8px 0 var(--box-shadow-color);
+  background-color: var(--bg-color);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}

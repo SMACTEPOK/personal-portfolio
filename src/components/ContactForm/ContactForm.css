@@ -1,0 +1,67 @@
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 3px solid var(--border-color);
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.input-error {
+  border-color: var(--accent-color) !important;
+}
+
+.error-text {
+  color: var(--accent-color);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: 3px solid var(--text-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}

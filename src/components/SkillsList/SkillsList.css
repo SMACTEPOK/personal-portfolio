@@ -1,0 +1,40 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  border: 2px solid var(--border-color);
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+}
+
+.skill-card__header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.skill-card__progress-bg {
+  width: 100%;
+  height: 12px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.skill-card__progress-bar {
+  height: 100%;
+  background-color: var(--accent-color);
+}
+
+.skill-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  opacity: 0.8;
+}

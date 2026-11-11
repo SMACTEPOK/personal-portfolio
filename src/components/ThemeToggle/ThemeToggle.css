@@ -1,0 +1,17 @@
+.theme-toggle {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 3px solid var(--border-color);
+  box-shadow: 4px 4px 0 var(--box-shadow-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+.theme-toggle:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--box-shadow-color);
+}

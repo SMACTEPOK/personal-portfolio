@@ -1,0 +1,41 @@
+.personal-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.personal-info__photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  filter: grayscale(100%) contrast(1.2);
+}
+
+.personal-info__name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 0.5rem;
+}
+
+.personal-info__profession {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.personal-info__desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .personal-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
